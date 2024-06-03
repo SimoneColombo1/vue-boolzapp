@@ -1,0 +1,30 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+} 
+
+
+.green-bar{
+    height: 10vh;
+    background-color:#009688 ;
+}
+
+.container{
+    background-color: #d9dbd4;
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+}
+
+.chat-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2rem 4rem;
+   height: 92vh;
+   width: 80vw;
+   background-color: blue;
+   position: absolute;
+  top: 0.5rem;
+}
