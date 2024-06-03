@@ -2,6 +2,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    font-family: "Lato", sans-serif;
 } 
 
 
@@ -36,8 +37,12 @@
 }
 
 .sidebar-top{
-   
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
     height: 3.5rem;
+    align-items: center;
+    vertical-align: middle;
 }
 
 .notifiche{
@@ -62,9 +67,74 @@
     background-image:url(../img/mine.jpg) ;
     height: 47rem;
     
-    background-size: cover;
+    background-size:auto;
 }
 .chat-footer{
     height: 4rem;
     background-color: white;
+}
+
+.avatar{
+    height: 3rem;
+    width: 3rem;
+    border-radius:50%;
+}
+.img-center{
+ display: flex;
+    
+    align-items: center;
+}
+
+.sidebar-icons{
+    color: #b1b1b1;
+    
+}
+.sidebar-icons i{
+    padding: 0.4rem;
+}
+
+
+.notifiche{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.notifiche span{
+    display: flex;
+    flex-direction: row;
+ 
+    align-items: center;
+}
+
+.circle{
+    border-radius:50% ;
+
+}
+.notifiche p{
+    color:#3f564d ;
+    font-size: 0.9rem;
+}
+
+.campanella{
+    background-color: white;
+    color: #8fdafc;
+    font-size: 1rem;
+    display: inline-block;
+    height: 2.5rem;
+    width: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    margin: 0.3rem 0.5rem 0rem 0.5rem;
+}
+
+.notifiche a{
+    padding-left: 3.5rem;
+    font-size: 0.8rem;
+    padding-bottom: 1rem;
+    display: flex;
+    position: absolute;
+    top: 5.7rem;
+    color: #618698;
+
 }
