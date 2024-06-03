@@ -19,12 +19,12 @@
 
 .chat-container{
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  
   margin: 2rem 4rem;
    height: 92vh;
    width: 80vw;
-   background-color: blue;
+  
    position: absolute;
   top: 0.7px;
 }
@@ -36,7 +36,7 @@
 }
 
 .sidebar-top{
-    border-bottom: solid 1px black;
+   
     height: 3.5rem;
 }
 
@@ -48,4 +48,23 @@
 .ricerca{
     height: 2.5rem;
     background-color: red;
+}
+
+
+
+.chat-top{
+    background-color: white;
+    height: 3.5rem;
+    width: 48.5rem;
+}
+
+.chat-content{
+    background-image:url(../img/mine.jpg) ;
+    height: 47rem;
+    
+    background-size: cover;
+}
+.chat-footer{
+    height: 4rem;
+    background-color: white;
 }
