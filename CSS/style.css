@@ -66,9 +66,11 @@
 }
 
 .chat-content{
+   display: flex;
+   flex-direction: column;
     background-image:url(../img/mine.jpg) ;
     height: 47rem;
-    
+    overflow-y:auto;
     background-size:auto;
 }
 .chat-footer{
@@ -149,7 +151,115 @@
 }
 
 .ricerca i{
-    padding: 1rem;
+    padding: 0.8rem;
     color: #b4b7b8;
     
+}
+
+.chat-preview{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: solid 0.8px #e1e1e1;
+    overflow-y:auto;
+    
+}
+
+.info{
+   
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar .info{
+    margin: 0.3rem ;
+}
+
+.last-message{
+    color:#d6d2cd;
+    font-size: 0.8rem;
+}
+
+.ora{
+    font-size: 0.6rem;
+    color: #cacbce;
+
+
+}
+
+.info span{
+    margin-left: 0.5rem;
+}
+
+.chat .info{
+    padding: 0.2rem;
+}
+
+.chat-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.chat-top i{
+    padding: 1rem 0.5rem;
+    color: #c3bfba;
+}
+
+.chat-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-left: solid 0.8px #e1e1e1;
+}
+.chat-footer input{
+    height: 1.5rem;
+    width: 30rem;
+   border: 0;
+}
+.chat-footer i{
+    color: #758085;
+    padding: 0rem 1rem;
+    font-size: 1.3rem;
+}
+
+
+.mandato{
+    display: flex;
+    align-self: end;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color:#d5f9ba ;
+    width: 20rem;
+  padding: 0.8rem;
+    border-radius: 0.6rem;
+    margin: 2rem;
+    
+    
+}
+
+.ricevuto{
+    display: flex;
+    align-self: start;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color:white ;
+    width: 20rem;
+  padding: 0.8rem;
+    border-radius: 0.6rem;
+    margin: 2rem;
+
+}
+
+
+
+
+
+
+.ora-messaggio{
+   display: flex;
+    align-self: flex-end;
+    font-size: 0.7rem;
+    color: #c6d4ba;
 }
