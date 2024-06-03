@@ -43,6 +43,7 @@
     height: 3.5rem;
     align-items: center;
     vertical-align: middle;
+    border-right: solid 1px #e1e1e1;
 }
 
 .notifiche{
@@ -52,7 +53,8 @@
 
 .ricerca{
     height: 2.5rem;
-    background-color: red;
+    background-color: #ffffff;
+    border-bottom: solid 0.8px #e1e1e1;
 }
 
 
@@ -137,4 +139,17 @@
     top: 5.7rem;
     color: #618698;
 
+}
+
+.ricerca input{
+    width: 12rem;
+    border:0px;
+   
+    
+}
+
+.ricerca i{
+    padding: 1rem;
+    color: #b4b7b8;
+    
 }
