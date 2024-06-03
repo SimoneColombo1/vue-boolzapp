@@ -26,5 +26,26 @@
    width: 80vw;
    background-color: blue;
    position: absolute;
-  top: 0.5rem;
+  top: 0.7px;
+}
+
+.sidebar{
+    width: 30%;
+    height: 100%;
+    background-color: white;
+}
+
+.sidebar-top{
+    border-bottom: solid 1px black;
+    height: 3.5rem;
+}
+
+.notifiche{
+    height: 4rem ;
+    background-color:#8edafc ;
+}
+
+.ricerca{
+    height: 2.5rem;
+    background-color: red;
 }
