@@ -16,10 +16,10 @@
    <main>
 <section class="green-bar"></section>
 
-    <article class="container">
+    <article class="container" id="app">
     
     <section class="chat-container">
-        <div class="sidebar">
+        <div class="sidebar" >
             <div class="sidebar-top"><span>
                 
                <span class="img-center"> <img src="./img/avatar_io.jpg" class="avatar"> 
@@ -47,13 +47,17 @@
                 <i class="fa-solid fa-magnifying-glass"></i>
                 <input type="text" class="search" placeholder="Cerca o inizia una nuova chat">
             </div>
-        <div class="chat-preview">
-            <span class="info"><img src="./img/avatar_1.jpg" class="avatar">
-             <span><p>Michele</p>
-                                <p class="last-message">ultimo messaggio inviato</p> </span>   </span>      
+        <div class="chat-preview "v-for="(item,Index,me) in contacts" :key="Index" 
+      
+      >
+      
+      
+            <span class="info"><img src="messages[index].avatar" class="avatar">
+             <span><p>{{item.name}}</p>
+                                <p class="last-message">{{item.message}}</p> </span>   </span>      
             <span class="ora">12.00</span>
-        </div>
         
+        </div>
         
         </div>
         <div class="chat">
@@ -71,7 +75,7 @@
 
 
             </div>
-            <div class="chat-content">
+            <div class="chat-content" >
                 <div class="mandato">
                     <span>Hai portato a spasso il cane?</span>
                     <span class="ora-messaggio">12.00</span>
@@ -113,6 +117,7 @@
    
    
     <script src='https://unpkg.com/vue@3/dist/vue.global.js'></script>
+    <script src=" https://cdn.jsdelivr.net/npm/luxon@3.4.4/build/global/luxon.min.js "></script>
     <script  src="./JS/script.js"></script>
 </body>
 </html>

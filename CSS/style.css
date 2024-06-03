@@ -34,6 +34,8 @@
     width: 30%;
     height: 100%;
     background-color: white;
+    display: flex;
+    flex-direction: column;
 }
 
 .sidebar-top{
@@ -228,10 +230,10 @@
 .mandato{
     display: flex;
     align-self: end;
-    justify-content: space-between;
+    
     flex-direction: column;
     background-color:#d5f9ba ;
-    width: 20rem;
+    width: 17rem;
   padding: 0.8rem;
     border-radius: 0.6rem;
     margin: 2rem;
@@ -242,10 +244,10 @@
 .ricevuto{
     display: flex;
     align-self: start;
-    justify-content: space-between;
+    
     flex-direction: column;
     background-color:white ;
-    width: 20rem;
+    width: 17rem;
   padding: 0.8rem;
     border-radius: 0.6rem;
     margin: 2rem;
