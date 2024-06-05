@@ -6,8 +6,8 @@ createApp({
 data(){
 return{
     CurrentChat :0,
-    LastMessage :0,
-    LastDate:0,
+    
+   
     contacts: [
         {
             name: 'Michele',
@@ -173,6 +173,7 @@ return{
         }
     ],
    
+    LastMessage :0,
     
     
 
@@ -183,8 +184,18 @@ return{
 
 
 }, 
+ methods: {
+   
+   //! Funzione per selezionare la chat
+    SelectChat: function(i){
+     this.CurrentChat= i;
 
+       console.log(this.CurrentChat);
 
+    },
+         
+     
+ },
 
 
 
