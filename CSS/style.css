@@ -84,6 +84,7 @@
     height: 3rem;
     width: 3rem;
     border-radius:50%;
+    
 }
 .img-center{
  display: flex;
@@ -185,6 +186,7 @@
 .ora{
     font-size: 0.6rem;
     color: #cacbce;
+    width: 4rem;
 
 
 }
@@ -264,4 +266,9 @@
     align-self: flex-end;
     font-size: 0.7rem;
     color: #c6d4ba;
+}
+
+.flex-chat{
+    display: flex;
+    flex-direction: column;
 }

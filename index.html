@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,17 +47,19 @@
                 <i class="fa-solid fa-magnifying-glass"></i>
                 <input type="text" class="search" placeholder="Cerca o inizia una nuova chat">
             </div>
-        <div class="chat-preview "v-for="(item,Index,me) in contacts" :key="Index" 
+        <div class="chat-preview "v-for="(contact,i) in  contacts" ::key="i"
+                            
       
       >
       
-      
-            <span class="info"><img src="messages[index].avatar" class="avatar">
-             <span><p>{{item.name}}</p>
-                                <p class="last-message">{{item.message}}</p> </span>   </span>      
-            <span class="ora">12.00</span>
+        <div v-for="(items, index) in contact.messages" :key="index">
+           
+            <span class="info" v-if="index===LastMessage"><img class="avatar" :src="contacts[i].avatar"   > <span>
+             <span v-if="index===LastMessage"><p>{{contact.name}}</p>
+                                <p class="last-message" >{{items.message}}</p> </span>   </span>      
+            <span class="ora" v-if="index===LastMessage">{{items.date}}</span>
         
-        </div>
+      </div>  </div>
         
         </div>
         <div class="chat">
@@ -75,21 +77,25 @@
 
 
             </div>
-            <div class="chat-content" >
-                <div class="mandato">
-                    <span>Hai portato a spasso il cane?</span>
-                    <span class="ora-messaggio">12.00</span>
-                </div>
-                <div class="ricevuto">
-                    <span>Certo!!!</span>
-                    <span class="ora-messaggio">12.05</span>
-                </div>
-                <div class="mandato">
-                    <span>Sben Bebond</span>
-                    <span class="ora-messaggio">12.06</span>
-
-                </div>
-
+            <div class="chat-content"  >
+               
+               
+               
+             
+               <div    v-for="(item, index) in contacts" ::key="index" >
+               
+                <div class="flex-chat" v-if="index===CurrentChat" 
+                >
+                    
+                <div v-for="(message,i) in item.messages" :key="i"
+                 :class="(message.status === 'sent') ? 'mandato':'ricevuto'"
+                           >
+                
+                <span>{{message.message}}</span>
+                    <span class="ora-messaggio">{{message.date}}</span>
+              </div>  </div>
+                
+</div>
 
 
 

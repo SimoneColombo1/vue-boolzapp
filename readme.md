@@ -17,5 +17,9 @@ Ricerca utenti: scrivendo qualcosa nell’input a sinistra, vengono visualizzati
 
 ----------------------------------------------------------Milestone 1---------------------------------------------------------
 
-Creo la parte grafica della pagina e metto la side bar i contatti usando un v-for
+Creo la parte grafica della pagina ,metto la sidebar e ci inserisco i contatti usando un v-for.
+
+----------------------------------------------------------Milestone 2---------------------------------------------------------
+
+
 
