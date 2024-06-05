@@ -7,7 +7,7 @@ data(){
 return{
     CurrentChat :0,
     NewMessage:"",
-   
+    BotNewMessage:"",
     contacts: [
         {
             name: 'Michele',
@@ -216,11 +216,37 @@ const invio={
         message: NewMessage,
         status : 'sent'
        }
-          this.contacts[this.CurrentChat].messages.push(invio);
+          
+       
+       setTimeout(()=>{
+          this.contacts[this.CurrentChat].messages.push({ date: gg + mm + aaaa+  " " +Hh+Mm,
+          message: 'okay',
+          status : 'received'
+
+          }
+          
+        
+          )
+
+
+
+
+          },1000)
+       
+       
+       
+       
+       
+       
+       
+       this.contacts[this.CurrentChat].messages.push(invio);
 
           console.log(invio, this.NewMessage)
 
 },
+
+
+
 
 },
 
