@@ -21,5 +21,9 @@ Creo la parte grafica della pagina ,metto la sidebar e ci inserisco i contatti u
 
 ----------------------------------------------------------Milestone 2---------------------------------------------------------
 
+Creo una variabile active contact e le segno il valore 0, inserisco gli elementi della chat con un v-for seguito da un if else
+mettendo come condizione per stampare la chat index === ad active contact, e stampo gli elementi con il contact attivo, poi metto ai contatti sulla sidebar una funzione click che cambia il valore di active contact a seconda di quale contatto clicco.
+
+---------------------------------------------------------Milestone 3----------------------------------------------------------
 
 
