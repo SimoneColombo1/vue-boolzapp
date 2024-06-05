@@ -6,7 +6,7 @@ createApp({
 data(){
 return{
     CurrentChat :0,
-    
+    NewMessage:"",
    
     contacts: [
         {
@@ -195,10 +195,34 @@ return{
     },
          
      
- },
+ 
+
+//% Funzione per inserire un nuovo messaggio nell'array
+
+UserMessage: function(NewMessage){
+      //? prendo la data odierna
+    let giorno= new Date();
+    let gg= giorno.getDate() + "/";
+
+let mm = giorno.getMonth() + 1 + "/";
+let aaaa = giorno.getFullYear();
+
+let Hh = giorno.getHours() + ":";
+let Mm = giorno.getMinutes() + ":";
 
 
+const invio={
+        date: gg + mm + aaaa+  " " +Hh+Mm,
+        message: NewMessage,
+        status : 'sent'
+       }
+          this.contacts[this.CurrentChat].messages.push(invio);
 
+          console.log(invio, this.NewMessage)
+
+},
+
+},
 
 
 

@@ -63,13 +63,16 @@
         
         </div>
         <div class="chat">
-            <div class="chat-top">
+            <div class="chat-top"  >
                 
-                <span class="info">
-                    
-                    <img src="./img/avatar_1.jpg" class="avatar">
-                    <span><p>Michele</p>
-                                       <p class="last-message">Ultimo accesso oggi alle 12.00</p> </span>   </span> 
+               
+                   
+                    <span class="info" v-for="(item, index) in contacts" ::key="index" 
+                    :class="(index === CurrentChat) ? '':'none'">
+                       
+                    <img  class="avatar" :src="contacts[index].avatar" >
+                   <span> <p >{{item.name}}</p>
+                                       <p class="last-message">Ultimo accesso oggi alle 12.00</p> </span> </span> 
 
 
                                        <span><i class="fa-solid fa-magnifying-glass"></i>
@@ -110,7 +113,7 @@
 
             </div>
              <div class="chat-footer"><i class="fa-regular fa-face-smile"></i>
-                    <input type="text" placeholder="Scrivi un messaggio">
+                    <input type="text" id="NewMessage" placeholder="Scrivi un messaggio" @keyup.enter="UserMessage(NewMessage)" v-model="NewMessage">
                     <i class="fa-solid fa-microphone"></i>
             
             </div>        
@@ -126,7 +129,7 @@
    
    
     <script src='https://unpkg.com/vue@3/dist/vue.global.js'></script>
-    <script src=" https://cdn.jsdelivr.net/npm/luxon@3.4.4/build/global/luxon.min.js "></script>
+    
     <script  src="./JS/script.js"></script>
 </body>
 </html>
