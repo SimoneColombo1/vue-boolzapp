@@ -26,4 +26,4 @@ mettendo come condizione per stampare la chat index === ad active contact, e sta
 
 ---------------------------------------------------------Milestone 3----------------------------------------------------------
 
-
+Creo una variabile con una stringa vuota, poi utilizzando un input con il key up inserisco il testo che verrà preso da una funzione che lo metterà nella variabile vuota , gli verrà messa la variabile sent e poi pushato nell'array. dopo aver cliccato invio partirà un altra funzione con un set timeout di un secondo che stamperà un secondo messaggio con la variabile recieved e che anch'esso verrà pushato nell array.
