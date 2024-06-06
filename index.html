@@ -45,14 +45,15 @@
             </div>
             <div class="ricerca">
                 <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="text" class="search" placeholder="Cerca o inizia una nuova chat">
+                <input type="text" class="search" placeholder="Cerca o inizia una nuova chat" id="Search"  @keyup="SearchUser  "    v-model="Search" >
             </div>
-        <div v-for="(contact,i) in  contacts" ::key="i"
-                            
+        <div v-for="(contact,i) in  contacts" :key="i"
+               
       
       >
       
-        <div class="chat-preview " v-for="(items, g) in contact.messages" :key="i" @click="SelectChat(i)">
+        <div class="chat-preview " v-for="(items, g) in contact.messages" :key="i" @click="SelectChat(i)" 
+        v-if="contact.visible === true ">
            
             <span class="info" v-if="g===LastMessage" ><img class="avatar" :src="contacts[i].avatar"   > 
              <span v-if="g===LastMessage"><p>{{contact.name}}</p>

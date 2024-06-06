@@ -7,7 +7,8 @@ data(){
 return{
     CurrentChat :0,
     NewMessage:"",
-    BotNewMessage:"",
+    Search:"",
+
     contacts: [
         {
             name: 'Michele',
@@ -174,7 +175,7 @@ return{
     ],
    
     LastMessage :0,
-    
+   
     
 
 }
@@ -245,7 +246,20 @@ const invio={
 
 },
 
+//> Funzione per la ricerca degli utenti
 
+SearchUser: function(){
+    
+    
+    this.contacts.forEach((element, i) => {
+        if (this.contacts[i].name.toLowerCase().includes(this.Search.toLowerCase())) {
+            this.contacts[i].visible = true;
+            
+        } else {
+            this.contacts[i].visible = false
+            
+        }
+    });
 
 
 },
@@ -257,7 +271,7 @@ const invio={
 
 
 
-
+ }
 
 
 }).mount('#app')
